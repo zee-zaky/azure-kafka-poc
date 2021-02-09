@@ -65,8 +65,8 @@ public class SimpleReceive {
 				.containerName(STORAGE_CONTAINER_NAME)
 				.buildAsyncClient();
 
-		/*System.setProperty("http.proxyHost","nz-proxy01.westpac.co.nz");
-		System.setProperty("http.proxyPort", "8080");*/
+		System.setProperty("http.proxyHost","nz-proxy01.westpac.co.nz");
+		System.setProperty("http.proxyPort", "8080");
 
 		EventProcessorClientBuilder eventProcessorClientBuilder = new EventProcessorClientBuilder()
 				.connectionString(EH_NAMESPACE_CONNECTION_STRING, eventHubName)
